@@ -1,6 +1,6 @@
 # hello_world
 
-Minimal example plugin. Use this as a template for your own plugins.
+Minimal example plugin. Use this as a starting template for your own plugins.
 
 ## updater-script
 
@@ -14,6 +14,6 @@ run_program("/sbin/sh", "/tmp/p/hello_world/run.sh", "2");
 ```
 ------------------------------
  Hello World!
- Plugin работает!
+ Plugin is working!
 ------------------------------
 ```

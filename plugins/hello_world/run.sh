@@ -17,6 +17,6 @@ ui_print() {
 
 ui_print "------------------------------"
 ui_print " Hello World!"
-ui_print " Plugin работает!"
+ui_print " Plugin is working!"
 ui_print "------------------------------"
 exit 0

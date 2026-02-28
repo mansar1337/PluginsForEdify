@@ -22,13 +22,9 @@ ui_print() {
 DEVICE=$(getprop ro.product.device)
 MODEL=$(getprop ro.product.model)
 
-ui_print "Проверка устройства..."
-ui_print "Кодовое имя: $DEVICE"
-ui_print "Модель: $MODEL"
-
 # Skip check if ALLOWED_DEVICES is empty
 if [ -z "$ALLOWED_DEVICES" ]; then
-    ui_print "[OK] Проверка отключена"
+    ui_print "[OK] Checking is disabled!"
     exit 0
 fi
 
@@ -42,11 +38,10 @@ for allowed in $(echo "$ALLOWED_DEVICES" | tr ',' ' '); do
 done
 
 if [ "$MATCHED" = "true" ]; then
-    ui_print "[OK] Устройство совместимо!"
     exit 0
 else
-    ui_print "[СТОП] Неверное устройство!"
-    ui_print "Ожидалось: $ALLOWED_DEVICES"
-    ui_print "Установка прервана."
+    ui_print "[STOP] Incorect device!"
+    ui_print "Need: $ALLOWED_DEVICES"
+    ui_print "Aborting."
     exit 1
 fi

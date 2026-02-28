@@ -38,16 +38,12 @@ assert(run_program("/sbin/sh", "/tmp/p/device_check/run.sh", "2") == 0);
 
 **Match:**
 ```
-Проверка устройства...
-Кодовое имя: cepheus
-[OK] Устройство совместимо!
+nothing, just continue
 ```
 
 **Mismatch:**
 ```
-Проверка устройства...
-Кодовое имя: whyred
-[СТОП] Неверное устройство!
-Ожидалось: cepheus,raphael,davinci
-Установка прервана.
+[STOP] Incorect device!
+Need: cepheus,raphael,davinci
+Aborting.
 ```

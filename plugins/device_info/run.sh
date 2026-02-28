@@ -18,10 +18,10 @@ ui_print() {
 ui_print "--------------------------------"
 ui_print " Device Info"
 ui_print "--------------------------------"
-ui_print "  Модель    : $(getprop ro.product.model)"
-ui_print "  Кодовое имя: $(getprop ro.product.device)"
+ui_print "  Model     : $(getprop ro.product.model)"
+ui_print "  Codename  : $(getprop ro.product.device)"
 ui_print "  Android   : $(getprop ro.build.version.release)"
-ui_print "  Арх.      : $(getprop ro.product.cpu.abi)"
+ui_print "  Arch      : $(getprop ro.product.cpu.abi)"
 ui_print "  ROM       : $(getprop ro.build.display.id)"
 ui_print "--------------------------------"
 exit 0

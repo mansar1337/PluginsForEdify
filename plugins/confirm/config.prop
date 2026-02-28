@@ -1,0 +1,2 @@
+# Message shown to the user before waiting for key press
+MESSAGE=Do you want to continue installation?

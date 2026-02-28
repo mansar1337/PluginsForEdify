@@ -1,0 +1,20 @@
+# Enable patching (true/false)
+ENABLED=false
+
+# Target file to patch
+TARGET=/system/build.prop
+
+# Patches — sed replacement pairs (up to 3)
+# Format: PATCH_N_FROM / PATCH_N_TO
+
+# Example 1: enable debug mode
+PATCH_1_FROM=ro.debuggable=0
+PATCH_1_TO=ro.debuggable=1
+
+# Example 2: enable ADB over USB
+PATCH_2_FROM=persist.sys.usb.config=mtp
+PATCH_2_TO=persist.sys.usb.config=mtp,adb
+
+# Example 3: (add your own)
+PATCH_3_FROM=
+PATCH_3_TO=
